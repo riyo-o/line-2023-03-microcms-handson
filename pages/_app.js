@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }) {
             liff
               .getProfile()
               .then((profile) => {
+                console.log({profile})
                 setLiffState([liff, profile])
               })
               .catch((err) => {
